@@ -10,10 +10,10 @@
    },
    "dependencies": {
       "axios": "^0.27.2",
-      "chrome-aws-lambda": "^10.1.0",
+      "chrome-aws-lambda": "^8.0.2",
       "next": "12.2.5",
       "playwright-core": "^1.25.1",
-      "puppeteer-core": "^17.1.1",
+      "puppeteer-core": "^8.0.0",
       "react": "18.2.0",
       "react-dom": "18.2.0"
    },
@@ -24,5 +24,8 @@
       "eslint": "8.23.0",
       "eslint-config-next": "12.2.5",
       "typescript": "4.8.2"
+   },
+   "engines": {
+      "node": "^14"
    }
 }
