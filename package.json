@@ -12,17 +12,18 @@
       "axios": "^0.27.2",
       "chrome-aws-lambda": "^10.1.0",
       "next": "12.2.5",
+      "playwright-core": "^1.25.1",
       "puppeteer-core": "^17.1.1",
       "react": "18.2.0",
       "react-dom": "18.2.0"
    },
    "devDependencies": {
       "@types/node": "18.7.15",
-      "puppeteer": "^17.1.1",
       "@types/react": "18.0.18",
       "@types/react-dom": "18.0.6",
       "eslint": "8.23.0",
       "eslint-config-next": "12.2.5",
+      "puppeteer": "^17.1.1",
       "typescript": "4.8.2"
    }
 }
