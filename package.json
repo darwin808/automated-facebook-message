@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "chrome-aws-lambda": "^10.1.0",
     "next": "12.2.5",
+    "puppeteer": "^17.1.1",
+    "puppeteer-core": "^17.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
