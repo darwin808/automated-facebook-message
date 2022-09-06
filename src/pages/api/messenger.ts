@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 import puppeteer from "puppeteer"
 import { Messenger } from "types"
+import chromium from "chrome-aws-lambda"
 const email = process.env.NEXT_PUBLIC_EMAIL || ""
 const pass = process.env.NEXT_PUBLIC_PASS || ""
 const messenger = process.env.NEXT_PUBLIC_MESSENGER || ""
@@ -12,6 +13,15 @@ const main = async ({ message = "hi 😊" }: Messenger) => {
       headless: true,
       args: ["--disable-notifications"],
    })
+
+   // const browser = await chromium.puppeteer.launch({
+   //    args: [...chromium.args, "--hide-scrollbars", "--disable-web-security"],
+   //    defaultViewport: chromium.defaultViewport,
+   //    executablePath: await chromium.executablePath,
+   //    headless: true,
+   //    ignoreHTTPSErrors: true,
+   //    ignoreDefaultArgs: ["--disable-extensions"],
+   // })
    const page = await browser.newPage()
    await page.goto("https://www.facebook.com/messages/")
 
