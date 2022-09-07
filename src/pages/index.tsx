@@ -6,7 +6,7 @@ import styles from "../../styles/Home.module.css"
 
 const getUser = async () => {
    try {
-      const response = await axios.get("/api/messenger?message=hi po")
+      const response = await axios.get("/api/messenger?message=hello ")
       console.log(response)
    } catch (error) {
       console.error(error)
