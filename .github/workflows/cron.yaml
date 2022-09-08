@@ -1,7 +1,7 @@
-name: daily-cron
+name: test
 on:
    schedule:
-      - cron: "*/2 * * * *"
+      - cron: "5 12 * * *"
 jobs:
    cron:
       runs-on: ubuntu-latest
