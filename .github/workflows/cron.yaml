@@ -1,7 +1,7 @@
 name: daily-cron
 on:
    schedule:
-      - cron: "50 2 * * *"
+      - cron: "24 11 * * *"
 jobs:
    cron:
       runs-on: ubuntu-latest
@@ -9,4 +9,4 @@ jobs:
          - name: Call our API route
            run: |
               curl --request GET \
-              --url 'https://automated-facebook-message.vercel.app/api/messenger?message=hi po' \
+              --url 'https://peaceful-cove-89366.herokuapp.com/api/messenger?q=Good%20morning%20😊' \
